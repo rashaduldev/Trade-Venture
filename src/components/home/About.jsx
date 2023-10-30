@@ -15,7 +15,7 @@ const About = () => {
             since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.
           </p>
-          <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
+          <button className="outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
             Read More
           </button>
         </div>
