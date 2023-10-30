@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="bg-white py-[24px]">
+    <div className="bg-white py-[24px] border-b border-[#eaeaea]">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
@@ -33,7 +33,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/blog"
                   className="text-lg font-normal text-text duration-300 hover:text-main hover:font-medium"
                 >
                   Blog
