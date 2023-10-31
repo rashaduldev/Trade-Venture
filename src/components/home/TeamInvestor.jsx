@@ -10,15 +10,54 @@ const TeamInvestor = () => {
           </p>
           <h2 className="text-[35px] font-bold text-white mt-5 mb-[30px]">
             Unleashing Opportunities and Maximizing Profits through Astute
-            Short-Term Investments in Today's Dynamic Business Landscape
+            Short-Term Investments in Todays Dynamic Business Landscape
           </h2>
           <ul>
-            <li>
-              <span>
-                <BiChevronRight />
+            <li className="flex items-center gap-[8px]">
+              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                <BiChevronRight className="text-main" size={20} />
               </span>
+              <p className="text-[#ededed] text-[14px] font-normal">
+                <span className="text-lg font-medium mr-[6px]">
+                  Rapid Growth Amplified -
+                </span>
+                Leverage short-term investments to propel your business forward
+                at an accelerated pace.
+              </p>
+            </li>
+
+            <li className="flex items-center gap-[8px] my-[18px]">
+              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                <BiChevronRight className="text-main" size={20} />
+              </span>
+              <p className="text-[#ededed] text-[14px] font-normal">
+                <span className="text-lg font-medium mr-[6px]">
+                  Market Trend Mastery -
+                </span>
+                Capitalize on fleeting opportunities by strategically navigating
+                evolving market dynamics
+              </p>
+            </li>
+
+            <li className="flex items-center gap-[8px]">
+              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                <BiChevronRight className="text-main" size={20} />
+              </span>
+              <p className="text-[#ededed] text-[14px] font-normal">
+                <span className="text-lg font-medium mr-[6px]">
+                  Financial Prosperity Secured -
+                </span>
+                Unlock the potential for substantial returns through informed
+                and agile investment strategies
+              </p>
             </li>
           </ul>
+
+          <div className="mt-10">
+            <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
+              Find Startup
+            </button>
+          </div>
         </div>
       </div>
     </div>
