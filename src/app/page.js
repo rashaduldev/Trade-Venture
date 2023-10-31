@@ -3,6 +3,7 @@ import Banner from "@/components/home/Banner";
 import CoFounder from "@/components/home/CoFounder";
 import GlobalNetwork from "@/components/home/GlobalNetwork";
 import TeamInvestor from "@/components/home/TeamInvestor";
+import VoiceOfSuccess from "@/components/home/VoiceOfSuccess";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <TeamInvestor />
       <GlobalNetwork />
       <CoFounder />
+      <VoiceOfSuccess />
     </main>
   );
 }

@@ -18,7 +18,7 @@ const GlobalNetwork = () => {
           </p>
         </div>
 
-        <div className="flex items-center lg:flex-row flex-col gap-[30px] xl:gap-[60px] w-full xl:mt-[100px] lg:mt-[80px] md:mt-[60px] mt-[40px]">
+        <div className="flex items-center lg:flex-row flex-col gap-[30px] xl:gap-[60px] w-full xl:mt-[80px] lg:mt-[70px] md:mt-[60px] mt-[40px]">
           <div className="w-1/2 flex items-center">
             <Image src={map} alt="" width={500} />
           </div>
