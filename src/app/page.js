@@ -1,5 +1,6 @@
 import About from "@/components/home/About";
 import Banner from "@/components/home/Banner";
+import CoFounder from "@/components/home/CoFounder";
 import GlobalNetwork from "@/components/home/GlobalNetwork";
 import TeamInvestor from "@/components/home/TeamInvestor";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -12,6 +13,7 @@ export default function Home() {
       <WhyChooseUs />
       <TeamInvestor />
       <GlobalNetwork />
+      <CoFounder />
     </main>
   );
 }
