@@ -8,7 +8,7 @@ const TeamInvestor = () => {
           <p className="text-white text-[22px] font-normal">
             Short Term Investor
           </p>
-          <h2 className="text-[35px] font-bold text-white mt-5 mb-[30px]">
+          <h2 className="xl:text-[35px] lg:text-[30px] text-[24px] font-bold text-white mt-5 mb-[30px]">
             Unleashing Opportunities and Maximizing Profits through Astute
             Short-Term Investments in Todays Dynamic Business Landscape
           </h2>
