@@ -1,6 +1,7 @@
 import About from "@/components/home/About";
 import Banner from "@/components/home/Banner";
 import CoFounder from "@/components/home/CoFounder";
+import Faq from "@/components/home/AskedQuestion";
 import GlobalNetwork from "@/components/home/GlobalNetwork";
 import TeamInvestor from "@/components/home/TeamInvestor";
 import VoiceOfSuccess from "@/components/home/VoiceOfSuccess";
@@ -16,6 +17,7 @@ export default function Home() {
       <GlobalNetwork />
       <CoFounder />
       <VoiceOfSuccess />
+      <Faq />
     </main>
   );
 }
