@@ -1,13 +1,46 @@
+"use client";
 import Image from "next/image";
 import logo from "../../assets/home/logo.png";
 import Link from "next/link";
 import { HiMiniBars3 } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
+import MobileSidebar from "./MobileSidebar";
+import { useState } from "react";
+
+export const menuItems = [
+  {
+    id: 1,
+    text: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    text: "Find Partner",
+    link: "/",
+  },
+  {
+    id: 3,
+    text: "Blog",
+    link: "/",
+  },
+  {
+    id: 4,
+    text: "About Us",
+    link: "/",
+  },
+  {
+    id: 5,
+    text: "Contact Us",
+    link: "/",
+  },
+];
 
 const Navbar = () => {
+  const [sidebarShow, setSidebarShow] = useState(false);
   return (
-    <div className="bg-white py-[24px] border-b border-[#eaeaea]">
-      <div className="container">
-        <div className="flex items-center justify-between">
+    <div className="bg-white py-[16px] lg:py-[24px] border-b border-[#eaeaea]">
+      <div className="container relative">
+        <div className="flex items-center justify-between ">
           <div>
             <Link href="/">
               <Image src={logo} alt="Logo" width={121} />
@@ -16,46 +49,16 @@ const Navbar = () => {
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-[30px]">
-              <li>
-                <Link
-                  href="/"
-                  className="text-lg font-medium text-main duration-300"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-lg font-normal text-text duration-300 hover:text-main hover:font-medium"
-                >
-                  Find Partner
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-lg font-normal text-text duration-300 hover:text-main hover:font-medium"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-lg font-normal text-text duration-300 hover:text-main hover:font-medium"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-lg font-normal text-text duration-300 hover:text-main hover:font-medium"
-                >
-                  Contact Us
-                </Link>
-              </li>
+              {menuItems.map((menu) => (
+                <li key={menu.id}>
+                  <Link
+                    href={menu.link}
+                    className="text-lg font-medium text-main duration-300"
+                  >
+                    {menu.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -69,9 +72,27 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div>
-            <HiMiniBars3 size={30} />
+          {/* responsive design bar here */}
+          <div
+            className="block lg:hidden cursor-pointer duration-300"
+            onClick={() => setSidebarShow(!sidebarShow)}
+          >
+            {!sidebarShow ? (
+              <HiMiniBars3 size={30} className="cursor-pointer" />
+            ) : (
+              <IoMdClose size={30} className="cursor-pointer" />
+            )}
           </div>
+        </div>
+
+        <div
+          className={
+            sidebarShow
+              ? "absolute top-full right-0 w-full mt-4 duration-300"
+              : "absolute top-[-1000px] right-0 w-full mt-4 duration-300"
+          }
+        >
+          <MobileSidebar />
         </div>
       </div>
     </div>
