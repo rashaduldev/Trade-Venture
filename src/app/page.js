@@ -17,7 +17,7 @@ export default function Home() {
       <GlobalNetwork />
       <CoFounder />
       <VoiceOfSuccess />
-      {/* <Faq /> */}
+      <Faq />
     </main>
   );
 }

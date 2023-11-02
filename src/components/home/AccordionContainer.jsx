@@ -40,7 +40,7 @@ const AccordionContainer = () => {
     },
   ];
   return (
-    <div className="w-full  mt-10">
+    <div className="w-full  lg:mt-10 mt-5">
       {faqData.map((data, index) => (
         <Accordion
           key={index}

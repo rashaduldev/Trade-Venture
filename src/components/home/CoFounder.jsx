@@ -14,7 +14,7 @@ const CoFounder = () => {
           </h2>
           <ul>
             <li className="flex items-center gap-[8px]">
-              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+              <span className="min-w-10 min-h-10 bg-primary rounded-full flex items-center justify-center">
                 <BiChevronRight className="text-white" size={20} />
               </span>
               <p className="text-main text-[14px] font-normal">
@@ -27,7 +27,7 @@ const CoFounder = () => {
             </li>
 
             <li className="flex items-center gap-[8px] my-[18px]">
-              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+              <span className="min-w-10 min-h-10 bg-primary rounded-full flex items-center justify-center">
                 <BiChevronRight className="text-white" size={20} />
               </span>
               <p className="text-main text-[14px] font-normal">
@@ -40,7 +40,7 @@ const CoFounder = () => {
             </li>
 
             <li className="flex items-center gap-[8px]">
-              <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+              <span className="min-w-10 min-h-10 bg-primary rounded-full flex items-center justify-center">
                 <BiChevronRight className="text-white" size={20} />
               </span>
               <p className="text-main text-[14px] font-normal">
