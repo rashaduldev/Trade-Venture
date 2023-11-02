@@ -19,15 +19,15 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="outline-none  border-b border-white w-[345px] text-base text-white py-2 bg-transparent"
+                className="outline-none  border-b border-white md:w-[345px] w-full text-base text-white py-2 bg-transparent"
               />
-              <div className="flex items-center gap-2 mt-[15px]">
+              <div className="flex md:items-center gap-2 mt-[15px]">
                 <input type="checkbox" name="" id="" className="bg-white" />
                 <p className="text-[#bbb] text-base font-normal">
                   I agree to receive emails from Stabila
                 </p>
               </div>
-              <button className="w-[350px] py-[14px] bg-white text-main rounded-lg text-[20px] mt-10 font-bold ">
+              <button className="w-full md:w-[350px] py-[14px] bg-white text-main rounded-lg text-[20px] mt-10 font-bold ">
                 Subscribe
               </button>
             </div>
@@ -37,14 +37,14 @@ const Footer = () => {
             <p className="font-medium text-[22px] text-white ">Contact Us</p>
 
             <div className="flex flex-col items-start mt-5 space-y-2">
-              <span className="text-lg font-normal text-white">
+              <span className="text-base font-thin text-[#bbb]">
                 tradeventure@gmail.com
               </span>
-              <span className="text-lg font-normal text-white">
+              <span className="text-base font-thin text-[#bbb]">
                 +8801522002200
               </span>
-              <span className="text-lg font-normal text-white">Location</span>
-              <span className="text-lg font-normal text-white">
+              <span className="text-base font-thin text-[#bbb]">Location</span>
+              <span className="text-base font-thin text-[#bbb]">
                 Address Line
               </span>
             </div>
@@ -54,18 +54,18 @@ const Footer = () => {
             <p className="font-medium text-[22px] text-white ">About Us</p>
 
             <div className="flex flex-col items-start mt-5 space-y-2">
-              <span className="text-lg font-normal text-white">Blog</span>
-              <span className="text-lg font-normal text-white">Partners</span>
-              <span className="text-lg font-normal text-white">Partners</span>
-              <span className="text-lg font-normal text-white">Partners</span>
+              <span className="text-base font-thin text-[#bbb]">Blog</span>
+              <span className="text-base font-thin text-[#bbb]">Partners</span>
+              <span className="text-base font-thin text-[#bbb]">Partners</span>
+              <span className="text-base font-thin text-[#bbb]">Partners</span>
             </div>
           </div>
         </div>
 
         <hr className="my-6 border-[#bbb] md:my-8 " />
 
-        <div className="flex items-center justify-between">
-          <p className="text-[20px] text-white font-thin ">
+        <div className="flex items-center flex-col md:flex-row justify-between gap-y-[19px]">
+          <p className="text-base  text-[#bbb] font-thin ">
             Copyright © 2023 tradeventures
           </p>
 

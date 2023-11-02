@@ -16,8 +16,8 @@ const VoiceOfSuccess = () => {
           </p>
         </div>
 
-        <div className="xl:mt-[80px] lg:mt-[60pxp] md:mt-[40px] mt-25px flex items-center lg:flex-row md:flex-col gap-[30px]">
-          <div className="w-1/2">
+        <div className="xl:mt-[80px] lg:mt-[60pxp] md:mt-[40px] mt-[35px] flex items-center lg:flex-row flex-col gap-[30px] justify-center">
+          <div className="lg:w-1/2 w-full">
             <div className="bg-[#f6f6f6] rounded-md pt-[30px] pb-[35px] px-[20px] relative">
               <span className="absolute top-[30px] left-[30px]">
                 <FaQuoteLeft size={48} className="text-[#bbb]" />
@@ -41,7 +41,7 @@ const VoiceOfSuccess = () => {
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="bg-[#f6f6f6] rounded-md pt-[30px] pb-[35px] px-[20px] relative">
               <span className="absolute top-[30px] left-[30px]">
                 <FaQuoteLeft size={48} className="text-[#bbb]" />

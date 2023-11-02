@@ -18,13 +18,18 @@ const GlobalNetwork = () => {
           </p>
         </div>
 
-        <div className="flex items-center lg:flex-row flex-col gap-[30px] xl:gap-[60px] w-full xl:mt-[80px] lg:mt-[70px] md:mt-[60px] mt-[40px]">
-          <div className="w-1/2 flex items-center">
+        <div className="flex justify-center items-center lg:flex-row flex-col gap-[30px] xl:gap-[60px] w-full xl:mt-[80px] lg:mt-[70px] md:mt-[60px] mt-[40px]">
+          <div className="w-full lg:w-1/2 flex items-center justify-center">
             <Image src={map} alt="" width={500} />
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2 md:w-[500px]">
             <div className="relative w-full h-full">
-              <Image src={meeting} alt="" width={500} />
+              {/* <Image
+                src={"https://i.ibb.co/D71dRcT/meeting.png"}
+                alt=""
+                width={500}
+              /> */}
+              <img src="https://i.ibb.co/D71dRcT/meeting.png" alt="" />
               <div
                 className="absolute "
                 style={{
@@ -33,8 +38,11 @@ const GlobalNetwork = () => {
                   transform: "translate(-50%, -50%)",
                 }}
               >
-                <div className="w-[94px] h-[94px] cursor-pointer bg-secondary rounded-full flex items-center justify-center ">
-                  <BsPlayFill color="#fff" size={62} />
+                <div className="lg:w-[94px] lg:h-[94px] w-[50px] h-[50px] cursor-pointer bg-secondary rounded-full flex items-center justify-center ">
+                  <BsPlayFill
+                    color="#fff"
+                    className="text-[36px] lg:text-[68px]"
+                  />
                 </div>
               </div>
             </div>
