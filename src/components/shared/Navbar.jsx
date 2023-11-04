@@ -64,12 +64,16 @@ const Navbar = () => {
 
           <div className="hidden lg:block">
             <div className="flex gap-4">
-              <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-text bg-transparent border border-[#e4e4e4] duration-300 hover:bg-main hover:text-white hover:border-main">
-                Sign In
-              </button>
-              <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-white bg-main border border-main duration-300 hover:bg-transparent hover:text-text hover:border-[#e4e4e4]">
-                Sign Up
-              </button>
+              <Link href="/sign-in">
+                <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-text bg-transparent border border-[#e4e4e4] duration-300 hover:bg-main hover:text-white hover:border-main">
+                  Sign In
+                </button>
+              </Link>
+              <Link href={"/sign-up"}>
+                <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-white bg-main border border-main duration-300 hover:bg-transparent hover:text-text hover:border-[#e4e4e4]">
+                  Sign Up
+                </button>
+              </Link>
             </div>
           </div>
           {/* responsive design bar here */}
