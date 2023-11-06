@@ -37,6 +37,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .playIcon svg {
   width: 60px;
@@ -63,6 +64,16 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 15px;
+  }
+
+  .playIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playIcon svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
