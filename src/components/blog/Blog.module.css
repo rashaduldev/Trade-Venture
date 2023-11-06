@@ -11,13 +11,20 @@
   border-radius: 30px;
   padding: 26px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .imageCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s ease-in;
 }
+
+.blogWrapper:hover .imageCenter {
+  transform: translateY(-13px) scaleX(1.1);
+}
+
 .dateTime {
   display: flex;
   align-items: center;
@@ -35,6 +42,11 @@
   color: var(--main);
   font-weight: 500;
   margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.blogWrapper:hover .title {
+  color: #032d2c;
 }
 .text {
   font-size: 16px;
