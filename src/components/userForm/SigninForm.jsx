@@ -25,11 +25,11 @@ const SignInForm = () => {
           <label htmlFor="name" className="text-lg font-medium text-text ">
             Password
           </label>
-          <div className="relative">
+          <div className="relative ">
             <input
               type={passwordShow ? "text" : "password"}
               placeholder="Enter your password ..."
-              className="placeholder-[#bbb] outline-none py-[10px] px-[20px] block w-full border border-[#E4E3E3] rounded-md mt-3"
+              className="placeholder-[#bbb] outline-none py-[10px] px-[20px] block w-full border border-[#E4E3E3] rounded-md mt-3 z-0"
             />
             <div
               className="absolute right-3 top-2 cursor-pointer"

@@ -38,14 +38,13 @@ const Footer = () => {
 
             <div className="flex flex-col items-start mt-5 space-y-2">
               <span className="text-base font-thin text-[#bbb]">
-                tradeventure@gmail.com
+                hello@tradeventures.pro
               </span>
               <span className="text-base font-thin text-[#bbb]">
-                +8801522002200
+                +8801727887729
               </span>
-              <span className="text-base font-thin text-[#bbb]">Location</span>
               <span className="text-base font-thin text-[#bbb]">
-                Address Line
+                Banani 11, Dhaka, Bangladesh
               </span>
             </div>
           </div>

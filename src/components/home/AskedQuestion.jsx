@@ -1,6 +1,18 @@
+"use client";
+import { useState } from "react";
 import AccordionContainer from "./AccordionContainer";
+import {
+  contactFaqData,
+  generalFaqData,
+  paymentFaqData,
+  refundFaqData,
+  servicesFaqData,
+} from "../fakeData";
 
 const AskedQuestion = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const tabContents = ["general", "services", "payment", "Refund", "Contact"];
+
   return (
     <div className="py-[40px] md:py-[50px] lg:py-[95px] xl:py-[110px] bg-[#f6f6f6]">
       <div className="container">
@@ -10,14 +22,33 @@ const AskedQuestion = () => {
               Frequently Asked Questions
             </h2>
 
-            <ul className="xl:mt-20 lg:mt-16 md:mt-[42px] mt-[40px] flex lg:flex-col flex-row gap-[28px] flex-wrap">
-              <li className="cursor-pointer text-base text-[#777] font-normal ">
+            {/* <ul className="xl:mt-20 lg:mt-16 md:mt-[42px] mt-[40px] flex lg:flex-col flex-row gap-[28px] flex-wrap">
+              <li
+                onClick={() => setActiveTab(0)}
+                className={
+                  activeTab === 0
+                    ? "cursor-pointer text-base text-main font-semibold "
+                    : "cursor-pointer text-base text-[#777] font-normal "
+                }
+              >
                 General
               </li>
-              <li className="cursor-pointer text-base text-[#777] font-normal ">
+              <li
+                onClick={() => setActiveTab(1)}
+                className={
+                  activeTab === 1
+                    ? "cursor-pointer text-base text-main font-semibold "
+                    : "cursor-pointer text-base text-[#777] font-normal "
+                }
+              >
                 Services
               </li>
-              <li className="cursor-pointer text-base text-main font-semibold ">
+              <li onClick={() => setActiveTab(1)}
+                className={
+                  activeTab === 1
+                    ? "cursor-pointer text-base text-main font-semibold "
+                    : "cursor-pointer text-base text-[#777] font-normal "
+                }>
                 Payment
               </li>
               <li className="cursor-pointer text-base text-[#777] font-normal ">
@@ -26,6 +57,22 @@ const AskedQuestion = () => {
               <li className="cursor-pointer text-base text-[#777] font-normal ">
                 Refund
               </li>
+            </ul> */}
+
+            <ul className="xl:mt-20 lg:mt-16 md:mt-[42px] mt-[40px] flex lg:flex-col flex-row gap-[28px] flex-wrap">
+              {tabContents?.map((tab, index) => (
+                <li
+                  key={index}
+                  onClick={() => setActiveTab(index)}
+                  className={
+                    activeTab === index
+                      ? "cursor-pointer text-base text-main font-semibold capitalize"
+                      : "cursor-pointer text-base text-[#777] font-normal capitalize"
+                  }
+                >
+                  {tab}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -38,7 +85,17 @@ const AskedQuestion = () => {
               />
             </div>
 
-            <AccordionContainer />
+            <>
+              <AccordionContainer
+                faqData={
+                  (activeTab === 0 && generalFaqData) ||
+                  (activeTab === 1 && servicesFaqData) ||
+                  (activeTab === 2 && paymentFaqData) ||
+                  (activeTab === 3 && refundFaqData) ||
+                  (activeTab === 4 && contactFaqData)
+                }
+              />
+            </>
           </div>
         </div>
       </div>

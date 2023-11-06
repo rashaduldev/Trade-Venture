@@ -16,17 +16,17 @@ export const menuItems = [
   {
     id: 2,
     text: "Find Partner",
-    link: "/",
+    link: "/find-partner",
   },
   {
     id: 3,
     text: "Blog",
-    link: "/",
+    link: "/blog",
   },
   {
     id: 4,
     text: "About Us",
-    link: "/",
+    link: "/about",
   },
   {
     id: 5,
