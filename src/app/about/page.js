@@ -14,7 +14,6 @@ const AboutPage = () => {
       {/* <AboutTradeVenture /> */}
       <AboutTradeVenture />
       <OurMission />
-
       <WhyChoose />
       <JoinForFutureTeam />
       <TradeVentureTagLine />
