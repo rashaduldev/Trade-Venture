@@ -12,14 +12,16 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
+import RadioGroup from "./RadioGroup";
 
 const ContactDetails = () => {
   return (
-    <div className="md:pt-[34px] pt-[24px] container">
+    <div className="md:pt-[34px] pt-[24px] container mb-5">
       <SectionTitle title={"Let’s talk with us"} />
-      <div className="grid grid-cols-1 md:grid-cols-8 mt-[31px]">
-        <div className="lg:col-span-3  bg-[#22CD5A] rounded-md py-10 px-10">
-          <div className=" h-full flex justify-between flex-col">
+      <div className="grid grid-cols-1 lg:grid-cols-8 mt-[31px] lg:shadow-xl hover:shadow-none duration-300">
+        <div className="lg:col-span-3  bg-[#22CD5A] rounded-md py-10 px-10 relative">
+          <div className={styles.circle}></div>
+          <div className=" lg:h-full  h-[350px] flex justify-between flex-col">
             <div className=" ">
               <h2 className="text-white  lg:text-[28px] text-[22px] font-semibold">
                 Contact Information
@@ -82,53 +84,91 @@ const ContactDetails = () => {
             </div>
           </div>
         </div>
-        <div className="lg:col-span-5 bg-yellow-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde
-          neque voluptate officiis reprehenderit natus quam fugiat quidem
-          delectus ullam doloremque dolorum quo, minima optio facilis sequi
-          rerum necessitatibus exercitationem explicabo assumenda facere
-          possimus quod ad id? Esse placeat repellendus magni dolores? Sed,
-          quisquam quas modi voluptas, esse eveniet molestias nobis in, rerum ad
-          alias! Nostrum consectetur enim dignissimos deleniti, vitae dicta
-          possimus obcaecati accusantium consequuntur. Commodi nesciunt eum,
-          aut, sapiente illo corporis expedita eos doloribus voluptatum
-          voluptatem repellendus sequi unde? Quasi quibusdam ab accusantium
-          eligendi maxime iste repellat natus explicabo et. Delectus quisquam
-          totam corporis ducimus, exercitationem quia, eligendi amet natus
-          placeat, at maxime? Iste, eius, atque autem voluptatum vitae at itaque
-          molestias illo amet veritatis quis veniam consectetur corporis nihil
-          doloremque? Nihil fugiat odit temporibus facilis hic unde nulla
-          voluptatum ex odio laudantium impedit aperiam voluptate similique
-          consequuntur velit tenetur culpa soluta veritatis recusandae deserunt
-          nostrum, porro quae ullam ipsum? Dicta excepturi cum ratione obcaecati
-          recusandae harum magni debitis! Provident distinctio debitis suscipit
-          dolore beatae est ratione vel eligendi qui. Eos aperiam eaque rem
-          dignissimos, assumenda doloremque illo debitis quasi molestias animi
-          adipisci ea corporis, odit voluptate harum quibusdam nemo quo vitae
-          officiis culpa, ducimus id totam ullam. Excepturi est cupiditate
-          deleniti quo impedit tempora earum ab nisi omnis, provident aliquam
-          hic perspiciatis aspernatur obcaecati dolor quaerat quasi et
-          temporibus enim. Perspiciatis placeat tempora temporibus dicta
-          blanditiis odio veniam beatae neque ut voluptas aliquam reiciendis
-          quasi, corporis officia voluptatum sit perferendis quas quos nulla
-          natus deleniti! Dignissimos perferendis excepturi ut adipisci, autem
-          quae tempore nesciunt praesentium expedita eaque dolorum doloremque
-          consequatur? Saepe necessitatibus atque minus id adipisci sit mollitia
-          eligendi nobis esse. Id quo quod earum et similique expedita! Dolorem
-          aspernatur iure incidunt in mollitia nulla velit magnam tempore
-          quisquam sunt! Maxime blanditiis autem culpa necessitatibus tempora
-          voluptatum repellendus porro, iste labore itaque, nisi ratione odio
-          aliquid aperiam sunt at error quod accusamus aliquam, tenetur mollitia
-          fugit. Quaerat cupiditate iure recusandae placeat enim quod blanditiis
-          nam facere, quia dolore sint error magnam nostrum commodi, esse illo
-          inventore adipisci. Numquam quidem sint ut dolores eos, officia
-          voluptatem in explicabo exercitationem neque expedita perspiciatis
-          modi incidunt odit, delectus velit obcaecati inventore labore!
-          Perspiciatis nobis qui facere non ipsum? Nostrum accusamus, numquam
-          similique enim, tenetur natus commodi quam quos laborum ab doloribus
-          ex explicabo eveniet! Dignissimos excepturi laborum velit distinctio,
-          molestiae quasi, rerum vitae, repellendus error rem autem qui minus
-          laudantium.
+        <div className="lg:col-span-5 rounded-md bg-white lg:px-[50px] lg:pt-[60px] lg:pb-[153px] pb-[50px] px-5 mt-10  lg:mt-0">
+          <div className="flex items-center lg:flex-row flex-col lg:gap-10 md:gap-7 gap-5">
+            <div className="lg:w-1/2 w-full">
+              <label
+                htmlFor="firstName"
+                className="text-[#1c1c1c] text-sm font-medium"
+              >
+                First Name
+              </label>
+              <input
+                type="text"
+                placeholder="Ex: Jhon"
+                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
+              />
+            </div>
+            <div className="lg:w-1/2 w-full">
+              <label
+                htmlFor="lastName"
+                className="text-[#1c1c1c] text-sm font-medium"
+              >
+                Last Name
+              </label>
+              <input
+                type="text"
+                placeholder="Ex: Doe"
+                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
+              />
+            </div>
+          </div>
+
+          <div className="flex items-center lg:flex-row flex-col lg:gap-10 md:gap-7 gap-5 lg:mt-10 md:mt-7 mt-5">
+            <div className="lg:w-1/2 w-full">
+              <label
+                htmlFor="firstName"
+                className="text-[#1c1c1c] text-sm font-medium"
+              >
+                Email
+              </label>
+              <input
+                type="text"
+                placeholder="Ex: Jhon@exp.com"
+                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
+              />
+            </div>
+            <div className="lg:w-1/2 w-full">
+              <label
+                htmlFor="lastName"
+                className="text-[#1c1c1c] text-sm font-medium"
+              >
+                Phone Number
+              </label>
+              <input
+                type="text"
+                placeholder="Ex: +10214*****"
+                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
+              />
+            </div>
+          </div>
+
+          <div className="lg:mt-10 md:mt-7 mt-5">
+            <h2 className="text-sm text-[#1c1c1c] font-medium">
+              Select Subject?
+            </h2>
+            <div>
+              <RadioGroup />
+            </div>
+          </div>
+          <div className="lg:mt-10 md:mt-7 mt-5 w-full">
+            <label
+              htmlFor="firstName"
+              className="text-[#1c1c1c] text-sm font-medium"
+            >
+              Message
+            </label>
+            <input
+              type="text"
+              placeholder="Type your message"
+              className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
+            />
+          </div>
+          <div className="flex justify-end mt-10 md:mt-7 mt-5">
+            <button class="w-full px-6 py-4 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#22CD5A] rounded-lg hover:bg-[#09ac3f] focus:ring focus:ring-[#22CD5A] focus:ring-opacity-80">
+              Send Message
+            </button>
+          </div>
         </div>
       </div>
     </div>
