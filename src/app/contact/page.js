@@ -1,13 +1,13 @@
+import ContactDetails from "@/components/contact/ContactDetails";
 import Brands from "@/components/findPartner/Brands";
-import CountDown from "@/components/findPartner/CountDown";
 import NewsLetter from "@/components/findPartner/NewsLetter";
 import AccordionContainer from "@/components/home/AccordionContainer";
 import { findPartnerAccordion } from "@/fakeData/fakeAccordionData";
 
-const FindPartnerPage = () => {
+const ContactPage = () => {
   return (
     <div>
-      <CountDown />
+      <ContactDetails />
       <NewsLetter />
       <Brands />
       <div className=" py-[30px] lg:py-[50px] md:py-[35px] container">
@@ -21,4 +21,4 @@ const FindPartnerPage = () => {
   );
 };
 
-export default FindPartnerPage;
+export default ContactPage;
