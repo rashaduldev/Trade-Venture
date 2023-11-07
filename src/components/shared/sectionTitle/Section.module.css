@@ -12,7 +12,7 @@
 /* Small screens (mobile phones) */
 @media only screen and (max-width: 600px) {
   .heading {
-    font-size: 22px;
+    font-size: 32px;
     padding-bottom: 14px;
     font-weight: 600;
   }
@@ -21,7 +21,7 @@
 /* Medium screens (tablets) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .heading {
-    font-size: 36px;
+    font-size: 40px;
     padding-bottom: 20px;
     font-weight: 600;
   }
