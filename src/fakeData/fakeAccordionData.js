@@ -147,3 +147,31 @@ export const contactFaqData = [
     desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
   },
 ];
+
+export const findPartnerAccordion = [
+  {
+    title: "What is the main purpose of this platform?",
+    desc: "TanahAir offers a service for creating a website design, illustration, icon set, website development, animation and digital marketing.",
+  },
+  {
+    title: "How can I benefit from joining as an investor?",
+    desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
+  },
+  {
+    title: "What advantages does this platform offer startups?",
+    desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
+  },
+  {
+    title: "How does the cofounder search work?",
+    desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
+  },
+  {
+    title: "Are the resource to improving my stratup performance",
+    desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
+  },
+  {
+    title:
+      "How Quickly will i start seeing result after working with TanahAir?",
+    desc: "Because TanahAir provides the best service to customers and provides flexibility to solve problems with our experts so that customers get satisfaction. And we provide service very quickly according to the price we offer",
+  },
+];

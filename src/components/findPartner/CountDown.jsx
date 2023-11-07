@@ -51,31 +51,39 @@ const CountDown = () => {
             </h2>
             <div className="flex items-center lg:gap-x-20 md:gap-x-[60px] gap-x-[20px] md:mt-[40px] mt-[30px]">
               <div className="flex flex-col">
-                <p className="lg:text-[60px] md:text-[42px] text-[32px] font-medium text-[#000]">
+                <p className="lg:text-[60px] md:text-[42px] text-[22px] md:font-medium font-bold text-[#000]">
                   {countdown.days}
                 </p>{" "}
-                <span className="text-[18px] font-normal">Days</span>
+                <span className="md:text-[18px] text-base font-normal">
+                  Days
+                </span>
               </div>
 
               <div className="flex flex-col">
-                <p className="lg:text-[60px] md:text-[42px] text-[32px] font-medium text-[#000]">
+                <p className="text-[22px] lg:text-[60px] md:text-[42px] md:font-medium font-bold text-[#000]">
                   {countdown.hours}
                 </p>{" "}
-                <span className="text-[18px] font-normal">Hours</span>
+                <span className="md:text-[18px] text-base font-normal">
+                  Hours
+                </span>
               </div>
 
               <div className="flex flex-col">
-                <p className="lg:text-[60px] md:text-[42px] text-[32px] font-medium text-[#000]">
+                <p className="text-[22px] lg:text-[60px] md:text-[42px] md:font-medium font-bold text-[#000]">
                   {countdown.minutes}
                 </p>{" "}
-                <span className="text-[18px] font-normal">Minutes</span>
+                <span className="md:text-[18px] text-base font-normal">
+                  Minutes
+                </span>
               </div>
 
               <div className="flex flex-col">
-                <p className="lg:text-[60px] md:text-[42px] text-[32px] font-medium text-[#000]">
+                <p className="text-[22px] lg:text-[60px] md:text-[42px] md:font-medium font-bold text-[#000]">
                   {countdown.seconds}
                 </p>{" "}
-                <span className="text-[18px] font-normal">Seconds</span>
+                <span className="md:text-[18px] text-base font-normal">
+                  Seconds
+                </span>
               </div>
             </div>
           </div>

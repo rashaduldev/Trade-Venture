@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
 import AccordionContainer from "./AccordionContainer";
+
 import {
   contactFaqData,
   generalFaqData,
   paymentFaqData,
   refundFaqData,
   servicesFaqData,
-} from "../fakeData";
+} from "@/fakeData/fakeAccordionData";
 
 const AskedQuestion = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -21,43 +22,6 @@ const AskedQuestion = () => {
             <h2 className="text-main xl:text-[50px] lg:text-[42px] text-[28px] font-bold ">
               Frequently Asked Questions
             </h2>
-
-            {/* <ul className="xl:mt-20 lg:mt-16 md:mt-[42px] mt-[40px] flex lg:flex-col flex-row gap-[28px] flex-wrap">
-              <li
-                onClick={() => setActiveTab(0)}
-                className={
-                  activeTab === 0
-                    ? "cursor-pointer text-base text-main font-semibold "
-                    : "cursor-pointer text-base text-[#777] font-normal "
-                }
-              >
-                General
-              </li>
-              <li
-                onClick={() => setActiveTab(1)}
-                className={
-                  activeTab === 1
-                    ? "cursor-pointer text-base text-main font-semibold "
-                    : "cursor-pointer text-base text-[#777] font-normal "
-                }
-              >
-                Services
-              </li>
-              <li onClick={() => setActiveTab(1)}
-                className={
-                  activeTab === 1
-                    ? "cursor-pointer text-base text-main font-semibold "
-                    : "cursor-pointer text-base text-[#777] font-normal "
-                }>
-                Payment
-              </li>
-              <li className="cursor-pointer text-base text-[#777] font-normal ">
-                Contact
-              </li>
-              <li className="cursor-pointer text-base text-[#777] font-normal ">
-                Refund
-              </li>
-            </ul> */}
 
             <ul className="xl:mt-20 lg:mt-16 md:mt-[42px] mt-[40px] flex lg:flex-col flex-row gap-[28px] flex-wrap">
               {tabContents?.map((tab, index) => (

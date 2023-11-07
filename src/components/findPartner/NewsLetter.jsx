@@ -11,7 +11,7 @@ const NewsLetter = () => {
             <input
               id="email"
               type="text"
-              class="px-4 py-2 text-[#1c1c1c] bg-transparent border rounded-md    focus:border-[#e4e4e4]  focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#e4e4e4]"
+              class="px-4 py-2 text-[#1c1c1c] bg-transparent border rounded-md    focus:border-[#e4e4e4]  focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#e4e4e4] lg:w-[488px]"
               placeholder="Enter Email Address"
             />
 
