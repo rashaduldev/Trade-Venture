@@ -37,13 +37,13 @@ const Footer = () => {
             <p className="font-medium text-[22px] text-white ">Contact Us</p>
 
             <div className="flex flex-col items-start mt-5 space-y-2">
-              <span className="text-base font-thin text-[#bbb]">
+              <span className="text-base font-normal text-[#bbb]">
                 hello@tradeventures.pro
               </span>
-              <span className="text-base font-thin text-[#bbb]">
+              <span className="text-base font-normal text-[#bbb]">
                 +8801727887729
               </span>
-              <span className="text-base font-thin text-[#bbb]">
+              <span className="text-base font-normal text-[#bbb]">
                 Banani 11, Dhaka, Bangladesh
               </span>
             </div>
@@ -53,10 +53,16 @@ const Footer = () => {
             <p className="font-medium text-[22px] text-white ">About Us</p>
 
             <div className="flex flex-col items-start mt-5 space-y-2">
-              <span className="text-base font-thin text-[#bbb]">Blog</span>
-              <span className="text-base font-thin text-[#bbb]">Partners</span>
-              <span className="text-base font-thin text-[#bbb]">Partners</span>
-              <span className="text-base font-thin text-[#bbb]">Partners</span>
+              <span className="text-base font-normal text-[#bbb]">Blog</span>
+              <span className="text-base font-normal text-[#bbb]">
+                Partners
+              </span>
+              <span className="text-base font-normal text-[#bbb]">
+                Partners
+              </span>
+              <span className="text-base font-normal text-[#bbb]">
+                Partners
+              </span>
             </div>
           </div>
         </div>
@@ -64,7 +70,7 @@ const Footer = () => {
         <hr className="my-6 border-[#bbb] md:my-8 " />
 
         <div className="flex items-center flex-col md:flex-row justify-between gap-y-[19px]">
-          <p className="text-base  text-[#bbb] font-thin ">
+          <p className="text-base  text-[#bbb] font-normal ">
             Copyright © 2023 tradeventures
           </p>
 

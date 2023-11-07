@@ -1,7 +1,7 @@
 .heading {
   text-align: center;
   font-size: 60px;
-  color: var(--main);
+  color: #1c1c1c;
   font-weight: 500;
   text-transform: capitalize;
   padding-bottom: 30px;
@@ -12,7 +12,7 @@
 /* Small screens (mobile phones) */
 @media only screen and (max-width: 600px) {
   .heading {
-    font-size: 28px;
+    font-size: 22px;
     padding-bottom: 14px;
     font-weight: 600;
   }
@@ -21,8 +21,9 @@
 /* Medium screens (tablets) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .heading {
-    font-size: 40px;
+    font-size: 36px;
     padding-bottom: 20px;
+    font-weight: 600;
   }
 }
 
