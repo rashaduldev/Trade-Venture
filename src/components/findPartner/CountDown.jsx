@@ -49,7 +49,7 @@ const CountDown = () => {
             <h2 className="lg:text-[48px] md:text-[36px] text-[28px] font-bold lg:font-medium text-[#000]">
               Journey Begins In
             </h2>
-            <div className="flex items-center lg:gap-x-20 md:gap-x-[60px] gap-x-[30px] md:mt-[40px] mt-[30px]">
+            <div className="flex items-center lg:gap-x-20 md:gap-x-[60px] gap-x-[20px] md:mt-[40px] mt-[30px]">
               <div className="flex flex-col">
                 <p className="lg:text-[60px] md:text-[42px] text-[32px] font-medium text-[#000]">
                   {countdown.days}
