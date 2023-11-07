@@ -31,7 +31,7 @@ export const menuItems = [
   {
     id: 5,
     text: "Contact Us",
-    link: "/",
+    link: "/contact",
   },
 ];
 
