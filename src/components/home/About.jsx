@@ -1,5 +1,6 @@
 import Image from "next/image";
 import about from "../../assets/home/about.png";
+import Link from "next/link";
 const About = () => {
   return (
     <div className="py-[40px] md:py-[50px] lg:py-[95px] xl:py-[110px] container">
@@ -15,9 +16,11 @@ const About = () => {
             since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.
           </p>
-          <button className="outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
-            Read More
-          </button>
+          <Link href="/about">
+            <button className="outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
+              Read More
+            </button>
+          </Link>
         </div>
 
         <div className="">
