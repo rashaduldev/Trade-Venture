@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiChevronRight } from "react-icons/bi";
 
 const CoFounder = () => {
@@ -54,9 +55,11 @@ const CoFounder = () => {
           </ul>
 
           <div className="mt-10">
-            <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
-              Find Co-Founder
-            </button>
+            <Link href="/find-partner">
+              <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-bold text-main bg-primary border border-primary duration-300 hover:bg-transparent hover:text-primary hover:border-primary">
+                Find Co-Founder
+              </button>
+            </Link>
           </div>
         </div>
       </div>
