@@ -6,6 +6,7 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 import MobileSidebar from "./MobileSidebar";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export const menuItems = [
   {
@@ -37,6 +38,8 @@ export const menuItems = [
 
 const Navbar = () => {
   const [sidebarShow, setSidebarShow] = useState(false);
+  const pathName = usePathname();
+
   return (
     <div className="bg-white py-[16px] lg:py-[24px] border-b border-[#eaeaea]">
       <div className="container relative">
@@ -53,7 +56,11 @@ const Navbar = () => {
                 <li key={menu.id}>
                   <Link
                     href={menu.link}
-                    className="text-lg font-medium text-main duration-300"
+                    className={
+                      pathName === menu.link
+                        ? "text-lg font-medium text-[#17c550] duration-300"
+                        : "text-lg font-medium text-main duration-300"
+                    }
                   >
                     {menu.text}
                   </Link>
