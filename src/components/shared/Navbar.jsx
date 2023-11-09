@@ -103,7 +103,7 @@ const Navbar = () => {
               : "absolute top-[-1000px] right-0 w-full mt-4 duration-300"
           }
         >
-          <MobileSidebar />
+          <MobileSidebar setSidebarShow={setSidebarShow} />
         </div>
       </div>
     </div>

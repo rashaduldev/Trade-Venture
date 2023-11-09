@@ -18,7 +18,7 @@ function RadioGroup() {
           onChange={handleOptionChange}
           className="accent-[#1c1c1c]"
         />
-        Option 1
+        General Inquiry
       </label>
       <br />
       <label className="flex gap-2 items-center">
@@ -29,7 +29,7 @@ function RadioGroup() {
           onChange={handleOptionChange}
           className="accent-[#1c1c1c]"
         />
-        Option 2
+        General Inquiry
       </label>
       <br />
       <label className="flex gap-2 items-center">
@@ -40,7 +40,7 @@ function RadioGroup() {
           onChange={handleOptionChange}
           className="accent-[#1c1c1c]"
         />
-        Option 3
+        General Inquiry
       </label>
     </div>
   );

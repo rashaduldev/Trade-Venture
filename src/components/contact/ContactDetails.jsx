@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import RadioGroup from "./RadioGroup";
+import ContactForm from "./ContactForm";
 
 const ContactDetails = () => {
   return (
@@ -85,90 +86,7 @@ const ContactDetails = () => {
           </div>
         </div>
         <div className="lg:col-span-5 rounded-md bg-white lg:px-[50px] lg:pt-[60px] lg:pb-[153px] pb-[50px] px-5 mt-10  lg:mt-0">
-          <div className="flex items-center lg:flex-row flex-col lg:gap-10 md:gap-7 gap-5">
-            <div className="lg:w-1/2 w-full">
-              <label
-                htmlFor="firstName"
-                className="text-[#1c1c1c] text-sm font-medium"
-              >
-                First Name
-              </label>
-              <input
-                type="text"
-                placeholder="Ex: Jhon"
-                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
-              />
-            </div>
-            <div className="lg:w-1/2 w-full">
-              <label
-                htmlFor="lastName"
-                className="text-[#1c1c1c] text-sm font-medium"
-              >
-                Last Name
-              </label>
-              <input
-                type="text"
-                placeholder="Ex: Doe"
-                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
-              />
-            </div>
-          </div>
-
-          <div className="flex items-center lg:flex-row flex-col lg:gap-10 md:gap-7 gap-5 lg:mt-10 md:mt-7 mt-5">
-            <div className="lg:w-1/2 w-full">
-              <label
-                htmlFor="firstName"
-                className="text-[#1c1c1c] text-sm font-medium"
-              >
-                Email
-              </label>
-              <input
-                type="text"
-                placeholder="Ex: Jhon@exp.com"
-                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
-              />
-            </div>
-            <div className="lg:w-1/2 w-full">
-              <label
-                htmlFor="lastName"
-                className="text-[#1c1c1c] text-sm font-medium"
-              >
-                Phone Number
-              </label>
-              <input
-                type="text"
-                placeholder="Ex: +10214*****"
-                className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
-              />
-            </div>
-          </div>
-
-          <div className="lg:mt-10 md:mt-7 mt-5">
-            <h2 className="text-sm text-[#1c1c1c] font-medium">
-              Select Subject?
-            </h2>
-            <div>
-              <RadioGroup />
-            </div>
-          </div>
-          <div className="lg:mt-10 md:mt-7 mt-5 w-full">
-            <label
-              htmlFor="firstName"
-              className="text-[#1c1c1c] text-sm font-medium"
-            >
-              Message
-            </label>
-            <input
-              type="text"
-              placeholder="Type your message"
-              className="outline-none bg-transparent border-b border-[#8d8d8d] pb-[10px] text-sm font-normal text-[#8d8d8d] w-full mt-2"
-            />
-          </div>
-          <div className="flex justify-end mt-10 md:mt-7 mt-5">
-            <button class="w-full px-6 py-4 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#22CD5A] rounded-lg hover:bg-[#09ac3f] focus:ring focus:ring-[#22CD5A] focus:ring-opacity-80">
-              Send Message
-            </button>
-          </div>
+          <ContactForm />
         </div>
       </div>
     </div>
