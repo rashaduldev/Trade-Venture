@@ -47,7 +47,7 @@ const ContactDetails = () => {
               <div className="flex gap-[25px] items-center">
                 <MdLocationPin color="#fff" size={30} />
                 <span className="text-base font-400 text-white ">
-                  Banani 11, Dhaka, Bangladesh
+                  E14, ICT Tower, Sher-E Bangla Nagar, Agargaon , Dhaka-1207
                 </span>
               </div>
             </div>
