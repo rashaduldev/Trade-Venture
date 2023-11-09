@@ -10,7 +10,7 @@ const About = () => {
           <h1 className="xl:text-[35px] lg:text-[28px] font-bold text-main mt-4 mb-[18px]">
             Introducation To Best Investor Sratrup Company
           </h1>
-          <p className="text-subText text-xs font-normal mb-[28px]">
+          <p className="text-subText text-base  font-normal mb-[28px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry standard dummy text ever
             since the 1500s, when an unknown printer took a galley of type and
