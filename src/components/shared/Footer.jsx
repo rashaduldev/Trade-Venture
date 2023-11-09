@@ -44,7 +44,7 @@ const Footer = () => {
                 +8801727887729
               </span>
               <span className="text-base font-normal text-[#bbb]">
-                Banani 11, Dhaka, Bangladesh
+                E14, ICT Tower, Sher-E Bangla Nagar, Agargaon , Dhaka-1207
               </span>
             </div>
           </div>
