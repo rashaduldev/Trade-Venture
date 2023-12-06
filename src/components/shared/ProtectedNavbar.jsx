@@ -14,32 +14,32 @@ export const menuItems = [
   {
     id: 1,
     text: "Startup",
-    link: "/home",
+    link: "/startup",
   },
   {
     id: 2,
     text: "Investor",
-    link: "/home",
+    link: "/investor",
   },
   {
     id: 3,
     text: "Co-Founder",
-    link: "/home",
+    link: "/co-founder",
   },
   {
     id: 4,
     text: "Mentor",
-    link: "/home",
+    link: "/mentor",
   },
   {
     id: 5,
     text: "Market Place",
-    link: "/home",
+    link: "/market-place",
   },
   {
     id: 6,
     text: "Events",
-    link: "/home",
+    link: "/events",
   },
 ];
 
@@ -52,7 +52,7 @@ const ProtectedNavbar = () => {
       <div className="container relative">
         <div className="flex items-center justify-between ">
           <div>
-            <Link href="/">
+            <Link href="/home">
               <Image src={logo} alt="Logo" width={121} />
             </Link>
           </div>
@@ -65,7 +65,7 @@ const ProtectedNavbar = () => {
                     href={menu.link}
                     className={
                       pathName === menu.link
-                        ? "text-lg font-normal text-[#e1e1e4] duration-300"
+                        ? "text-lg font-normal text-primary duration-300"
                         : "text-lg font-normal text-white duration-300"
                     }
                   >

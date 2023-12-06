@@ -41,6 +41,7 @@ body {
   background-size: cover;
 }
 
+/* protected home background image */
 .protected-bg {
   background-image: url("https://i.ibb.co/QHHmv2z/pexels-anna-nekrashevich-6802042.jpg");
   background-position: center;
@@ -51,6 +52,27 @@ body {
   z-index: 10;
 }
 .protected-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+/* startup background image */
+
+.startup-banner {
+  background-image: url("https://i.ibb.co/VT67jhK/startup-2188679-1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  z-index: 10;
+}
+.startup-banner::before {
   content: "";
   position: absolute;
   width: 100%;
