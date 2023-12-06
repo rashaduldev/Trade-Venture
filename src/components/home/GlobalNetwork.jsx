@@ -1,6 +1,6 @@
 import Image from "next/image";
 import map from "../../assets/home/map.png";
-import meeting from "../../assets/home/meeting.png";
+
 import { BsPlayFill } from "react-icons/bs";
 
 const GlobalNetwork = () => {
@@ -24,11 +24,6 @@ const GlobalNetwork = () => {
           </div>
           <div className="w-full lg:w-1/2 md:w-[500px]">
             <div className="relative w-full h-full">
-              {/* <Image
-                src={"https://i.ibb.co/D71dRcT/meeting.png"}
-                alt=""
-                width={500}
-              /> */}
               <img src="https://i.ibb.co/D71dRcT/meeting.png" alt="" />
               <div
                 className="absolute "

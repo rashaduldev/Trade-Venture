@@ -21,10 +21,41 @@ body {
   transition: height 500ms;
 }
 
+.heading-text {
+  @apply lg:text-[32px] md:text-[26px] text-[20px] font-semibold;
+}
+
+.section-padding {
+  @apply py-[40px] md:py-[50px] lg:py-[95px] xl:py-[110px];
+}
+
+.section-title {
+  @apply xl:text-[50px] lg:text-[42px] md:text-[28px] text-[22px] font-bold;
+}
+
 /* sign up page bg  class */
 .signup-bg {
   background-image: url("https://i.ibb.co/1ssfB7C/Frame-1000010026.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.protected-bg {
+  background-image: url("https://i.ibb.co/QHHmv2z/pexels-anna-nekrashevich-6802042.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  z-index: 10;
+}
+.protected-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
 }

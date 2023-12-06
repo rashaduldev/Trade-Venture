@@ -15,7 +15,7 @@ const WhyChoose = () => {
               <div className={styles.imageCenter}>
                 <Image
                   src={data.image}
-                  alt="kisu misu"
+                  alt="icons"
                   width={60}
                   height={60}
                   styles={{

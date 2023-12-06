@@ -1,47 +1,54 @@
 "use client";
 import Image from "next/image";
-import logo from "../../assets/home/logo.png";
+import logo from "../../assets/home/footer-logo.png";
 import Link from "next/link";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 import MobileNavbar from "./MobileNavbar";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { FaUser } from "react-icons/fa";
+import { MdLogout } from "react-icons/md";
 
 export const menuItems = [
   {
     id: 1,
-    text: "Home",
-    link: "/",
+    text: "Startup",
+    link: "/home",
   },
   {
     id: 2,
-    text: "Find Partner",
-    link: "/find-partner",
+    text: "Business",
+    link: "/home",
   },
   {
     id: 3,
-    text: "Blog",
-    link: "/blog",
+    text: "Co-Founder",
+    link: "/home",
   },
   {
     id: 4,
-    text: "About Us",
-    link: "/about",
+    text: "Finance Hub",
+    link: "/home",
   },
   {
     id: 5,
-    text: "Contact Us",
-    link: "/contact",
+    text: "Market Place",
+    link: "/home",
+  },
+  {
+    id: 6,
+    text: "Events",
+    link: "/home",
   },
 ];
 
-const Navbar = () => {
+const ProtectedNavbar = () => {
   const [navbarShow, setNavbarShow] = useState(false);
   const pathName = usePathname();
 
   return (
-    <div className="bg-white py-[16px] lg:py-[24px] border-b border-[#eaeaea]">
+    <div className="bg-secondary py-3 lg:py-[24px] ">
       <div className="container relative">
         <div className="flex items-center justify-between ">
           <div>
@@ -58,8 +65,8 @@ const Navbar = () => {
                     href={menu.link}
                     className={
                       pathName === menu.link
-                        ? "text-lg font-medium text-[#17c550] duration-300"
-                        : "text-lg font-medium text-main duration-300"
+                        ? "text-lg font-normal text-[#e1e1e4] duration-300"
+                        : "text-lg font-normal text-white duration-300"
                     }
                   >
                     {menu.text}
@@ -70,17 +77,13 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden lg:block">
-            <div className="flex gap-4">
-              <Link href="/sign-in">
-                <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-text bg-transparent border border-[#e4e4e4] duration-300 hover:bg-main hover:text-white hover:border-main">
-                  Sign In
-                </button>
-              </Link>
-              <Link href={"/sign-up"}>
-                <button className="outline-none py-2 px-[25px] rounded-[8px] text-lg font-normal text-white bg-main border border-main duration-300 hover:bg-transparent hover:text-text hover:border-[#e4e4e4]">
-                  Sign Up
-                </button>
-              </Link>
+            <div className="flex gap-6">
+              <div>
+                <FaUser color="#fff" size={22} className="cursor-pointer" />
+              </div>
+              <div>
+                <MdLogout color="#fff" size={22} className="cursor-pointer" />
+              </div>
             </div>
           </div>
           {/* responsive design bar here */}
@@ -89,9 +92,9 @@ const Navbar = () => {
             onClick={() => setNavbarShow(!navbarShow)}
           >
             {!navbarShow ? (
-              <HiMiniBars3 size={30} className="cursor-pointer" />
+              <HiMiniBars3 size={30} className="cursor-pointer text-white" />
             ) : (
-              <IoMdClose size={30} className="cursor-pointer" />
+              <IoMdClose size={30} className="cursor-pointer text-white" />
             )}
           </div>
         </div>
@@ -110,4 +113,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ProtectedNavbar;
