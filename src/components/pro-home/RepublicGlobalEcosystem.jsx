@@ -20,7 +20,7 @@ const RepublicGlobalEcosystem = () => {
             </p>
           </div>
           <div>
-            <div className="border-t border-border py-5">
+            <div className="border-t border-border py-6">
               <div className="flex items-center justify-between">
                 <h2 className="lg:text-xl md:text-lg text-base font-semibold text-white">
                   Investing Platform
@@ -29,6 +29,41 @@ const RepublicGlobalEcosystem = () => {
                   <FaArrowRightLong size={28} color="#fff" />
                 </Link>
               </div>
+              <p className="text-base text-white mt-5">
+                Retail investing allows anyone to invest early in startups, real
+                estate, art, music, and more - all while empowering founders to
+                raise too.
+              </p>
+            </div>
+            <div className="border-t border-border py-6">
+              <div className="flex items-center justify-between">
+                <h2 className="lg:text-xl md:text-lg text-base font-semibold text-white">
+                  Find your startup guide
+                </h2>
+                <Link href="#">
+                  <FaArrowRightLong size={28} color="#fff" />
+                </Link>
+              </div>
+              <p className="text-base text-white mt-5">
+                Retail investing allows anyone to invest early in startups, real
+                estate, art, music, and more - all while empowering founders to
+                raise too.
+              </p>
+            </div>
+            <div className="border-t border-b border-border py-6">
+              <div className="flex items-center justify-between">
+                <h2 className="lg:text-xl md:text-lg text-base font-semibold text-white">
+                  Institutional investing
+                </h2>
+                <Link href="#">
+                  <FaArrowRightLong size={28} color="#fff" />
+                </Link>
+              </div>
+              <p className="text-base text-white mt-5">
+                Retail investing allows anyone to invest early in startups, real
+                estate, art, music, and more - all while empowering founders to
+                raise too.
+              </p>
             </div>
           </div>
         </div>
