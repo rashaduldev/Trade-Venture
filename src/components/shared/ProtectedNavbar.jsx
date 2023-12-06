@@ -18,7 +18,7 @@ export const menuItems = [
   },
   {
     id: 2,
-    text: "Business",
+    text: "Investor",
     link: "/home",
   },
   {
@@ -28,7 +28,7 @@ export const menuItems = [
   },
   {
     id: 4,
-    text: "Finance Hub",
+    text: "Mentor",
     link: "/home",
   },
   {

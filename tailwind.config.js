@@ -23,6 +23,7 @@ module.exports = {
         text: "#494949",
         white: "#ffffff",
         subText: "#777",
+        border: "#eaeaea",
       },
     },
   },
