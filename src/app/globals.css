@@ -81,3 +81,24 @@ body {
   top: 0;
   left: 0;
 }
+
+/* startup profile banner */
+
+.startup-profile-banner {
+  background-image: url("https://i.ibb.co/pyXvdKM/maple-1079235-1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  position: relative;
+  z-index: 10;
+}
+.startup-profile-banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
