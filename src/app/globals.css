@@ -30,9 +30,19 @@ body {
 }
 
 .section-title {
-  @apply xl:text-[50px] lg:text-[42px] md:text-[28px] text-[22px] font-bold;
+  @apply xl:text-[56px] lg:text-[44px] md:text-[28px] text-[22px] font-bold;
 }
 
+.text-36 {
+  @apply lg:text-[36px] md:text-[28px] text-[20px] font-semibold;
+}
+.text-20 {
+  @apply lg:text-[18px] md:text-[18px] text-base font-medium;
+}
+
+.common-button {
+  @apply outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-bold  border duration-300;
+}
 /* sign up page bg  class */
 .signup-bg {
   background-image: url("https://i.ibb.co/1ssfB7C/Frame-1000010026.png");
