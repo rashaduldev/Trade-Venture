@@ -5,7 +5,7 @@ import { FaLink } from "react-icons/fa6";
 
 const AboutTabContent = () => {
   return (
-    <div>
+    <div className="mt-5">
       {/* <h2 className="tab-title">About</h2> */}
       <TabTitle>About</TabTitle>
 
