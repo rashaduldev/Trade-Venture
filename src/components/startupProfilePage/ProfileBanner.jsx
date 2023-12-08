@@ -86,7 +86,7 @@ const ProfileBanner = () => {
             <IoIosShareAlt size={18} className="text-white" />
           </div>
         </div>
-        <p className="text-xl font-medium text-main mt-5 w-1/2">
+        <p className="text-xl font-medium text-main mt-5 lg:w-1/2">
           Making the power of Computer Vision accessible to everyone
         </p>
         <div className="mt-4 mb-6">

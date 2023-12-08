@@ -12,7 +12,6 @@ const ProfileImageGallery = () => {
     "https://i.ibb.co/dmqY2bb/entrepreneur-593357-1280.jpg",
     "https://i.ibb.co/TkQh7vk/entrepreneur-593378-1280.jpg",
   ];
-  console.log(companyImageGallery);
 
   const [selectedImage, setSelectedImage] = useState([companyImageGallery[0]]);
 

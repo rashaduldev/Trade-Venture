@@ -1,4 +1,4 @@
-export const startupData = [
+export const startupBlogData = [
   {
     id: 1,
     image: "https://i.ibb.co/47YK1NH/startup-3267505-1280.jpg",
@@ -154,5 +154,50 @@ export const startupData = [
     totalInvestors: 74,
     companyValuations: "10.00M",
     profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+  },
+];
+
+export const startupTeamTabData = [
+  {
+    id: 1,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
+  },
+  {
+    id: 2,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
+  },
+  {
+    id: 3,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
+  },
+  {
+    id: 4,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
+  },
+  {
+    id: 5,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
+  },
+  {
+    id: 6,
+    image: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Paul Scanlan",
+    desecration: "Co-Founder & CEO",
+    text: "Emmy winning serial entrepreneur, Cofounder/President MobiTV, 2011 Forbes 'Names You Need to Know', Adjunct Lecturer of Entrepreneurship at NU Kellogg.",
   },
 ];
