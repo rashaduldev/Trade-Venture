@@ -232,3 +232,46 @@ export const discussionContentData = [
     text: "When is this investment going to finish, close, or finalize? Do you have an idea on a month in 2024 for closing time",
   },
 ];
+
+export const reviewContentData = [
+  {
+    profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Luay Obaidi",
+    status: "active investor",
+    lastInvest: "Invested about 12 hours ago",
+    price: "$ 8500",
+    text: "Plie can add value to the community by encouraging a healthy, sporty life by making it easy to have who you do sport with Football is the most beloved sport and helps many countries in youth development.",
+  },
+  {
+    profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Luay Obaidi",
+    status: "active investor",
+    lastInvest: "Invested about 12 hours ago",
+    price: "$ 8500",
+    text: "Plie can add value to the community by encouraging a healthy, sporty life by making it easy to have who you do sport with Football is the most beloved sport and helps many countries in youth development.",
+  },
+  {
+    profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Luay Obaidi",
+    status: "active investor",
+    lastInvest: "Invested about 12 hours ago",
+    price: "$ 8500",
+    text: "Plie can add value to the community by encouraging a healthy, sporty life by making it easy to have who you do sport with Football is the most beloved sport and helps many countries in youth development.",
+  },
+  {
+    profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Luay Obaidi",
+    status: "active investor",
+    lastInvest: "Invested about 12 hours ago",
+    price: "$ 8500",
+    text: "Plie can add value to the community by encouraging a healthy, sporty life by making it easy to have who you do sport with Football is the most beloved sport and helps many countries in youth development.",
+  },
+  {
+    profile: "https://i.ibb.co/9qWJdkH/6.jpg",
+    name: "Luay Obaidi",
+    status: "active investor",
+    lastInvest: "Invested about 12 hours ago",
+    price: "$ 8500",
+    text: "Plie can add value to the community by encouraging a healthy, sporty life by making it easy to have who you do sport with Football is the most beloved sport and helps many countries in youth development.",
+  },
+];

@@ -8,7 +8,7 @@ import React from "react";
 
 const TeamTabContent = () => {
   return (
-    <>
+    <div className="mt-5">
       <TabTitle>Teams</TabTitle>
       {/* team card start here */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
@@ -58,7 +58,7 @@ const TeamTabContent = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
