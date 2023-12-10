@@ -1,5 +1,5 @@
 "use client";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const ComingSoon = () => {
   const params = usePathname();
@@ -8,9 +8,9 @@ const ComingSoon = () => {
 
   return (
     <div className="h-screen w-full flex justify-center items-center flex-col">
-      <h1 className="text-[68px] font-bold text-secondary capitalize ">
+      {/* <h1 className="text-[68px] font-bold text-secondary capitalize ">
         <span className="capitalize">{pageName}</span> <span>page</span>
-      </h1>
+      </h1> */}
       <h2 className="lg:text-[96px] md:text-[48px] text-[28px] font-extrabold mt-10 text-main uppercase">
         {" "}
         C<span className="text-secondary">o</span>ming{" "}

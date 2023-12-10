@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import ProtectedNavbar from "@/components/shared/ProtectedNavbar";
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function ProtectedLayout({ children }) {
     <>
       <ProtectedNavbar />
       {children}
+      <Footer />
     </>
   );
 }
