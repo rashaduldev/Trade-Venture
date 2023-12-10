@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const MaxGoalRaised = () => {
   return (
     <div>
@@ -28,9 +30,11 @@ const MaxGoalRaised = () => {
         <button className="common-button bg-primary text-white hover:bg-secondary">
           Invest
         </button>
-        <button className="common-button border-primary text-primary hover:bg-primary hover:text-white">
-          Book a meeting
-        </button>
+        <Link href="/book-meeting">
+          <button className="common-button border-primary text-primary hover:bg-primary hover:text-white w-full">
+            Book a meeting
+          </button>
+        </Link>
       </div>
       <p className="text-base font-normal text-center text-text mt-2">
         $150 minimum investment

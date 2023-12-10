@@ -14,6 +14,11 @@ const ProfileImageGallery = () => {
   ];
 
   const [selectedImage, setSelectedImage] = useState([companyImageGallery[0]]);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -32,7 +37,30 @@ const ProfileImageGallery = () => {
   return (
     <div className="px-1 lg:px-0">
       <div className="relative w-full h-[250px] md:h-[400px]">
-        <Image src={selectedImage} alt="" fill className="rounded-xl" />
+        {!isLoaded && (
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "#f0f0f0",
+            }}
+          >
+            Loading...
+          </div>
+        )}
+        <Image
+          src={selectedImage}
+          alt=""
+          fill
+          onLoad={handleImageLoad}
+          className={`rounded-xl w-full ${isLoaded ? "block" : "hidden"}`}
+        />
       </div>
       <div className="flex flex-wrap gap-5 mt-2 mb-4">
         {companyImageGallery?.map((image, index) => {

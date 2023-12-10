@@ -78,9 +78,9 @@ const ProtectedNavbar = () => {
 
           <div className="hidden lg:block">
             <div className="flex gap-6">
-              <div>
+              <Link href="/users/dashboard">
                 <FaUser color="#fff" size={22} className="cursor-pointer" />
-              </div>
+              </Link>
               <div>
                 <MdLogout color="#fff" size={22} className="cursor-pointer" />
               </div>
