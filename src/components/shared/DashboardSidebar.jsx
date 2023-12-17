@@ -48,7 +48,7 @@ const DashboardSidebar = () => {
     {
       id: 6,
       text: "Message",
-      link: "/users/message",
+      link: "/message",
       icon: <AiOutlineMessage />,
     },
     {
@@ -59,12 +59,6 @@ const DashboardSidebar = () => {
     },
     {
       id: 8,
-      text: "Calender",
-      link: "/users/calender",
-      icon: <GiTorch />,
-    },
-    {
-      id: 9,
       text: "Calender",
       link: "/users/calender",
       icon: <GiTorch />,
