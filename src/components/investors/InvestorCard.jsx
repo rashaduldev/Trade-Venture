@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const InvestorCard = ({ item }) => {
   return (
@@ -19,9 +20,11 @@ const InvestorCard = ({ item }) => {
           Total Invest: <b>{item?.totalInvest}</b>
         </p>
         <div className="flex justify-center mt-1">
-          <button className="outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-normal hover:bg-secondary  border duration-300 bg-primary text-white">
-            View More
-          </button>
+          <Link href={`/investor/${item?.id}`}>
+            <button className="outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-normal hover:bg-secondary  border duration-300 bg-primary text-white">
+              View More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

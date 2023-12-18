@@ -3,12 +3,14 @@ import DealTerms from "@/components/startupProfilePage/DealTerms";
 import MaxGoalRaised from "@/components/startupProfilePage/MaxGoalRaised";
 import ProfileBanner from "@/components/startupProfilePage/ProfileBanner";
 import ProfileImageGallery from "@/components/startupProfilePage/ProfileImageGallery";
+import StartupCompnayInfo from "@/components/startupProfilePage/StartupCompnayInfo";
 import React from "react";
 
 const SingleStartupPage = () => {
   return (
     <div>
       <ProfileBanner />
+      <StartupCompnayInfo />
       <div className="grid grid-cols-1 lg:grid-cols-9 gap-x-20 container">
         <div className="lg:col-span-6">
           <ProfileImageGallery />
