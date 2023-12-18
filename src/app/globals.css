@@ -41,7 +41,7 @@ body {
 }
 
 .common-button {
-  @apply outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-bold  border duration-300;
+  @apply outline-none py-2 xl:px-[25px] px-[15px] md:px-[20px]  rounded-[8px] lg:text-lg text-base font-semibold  border duration-300;
 }
 /* sign up page bg  class */
 .signup-bg {

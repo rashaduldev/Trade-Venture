@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdOptions } from "react-icons/io";
 import ProtectedSearchInput from "../userForm/ProtectedSearchInput";
 
-const StartupBanner = () => {
+const PageBanner = ({ title }) => {
   return (
     <div className="startup-banner">
       <div className="container relative">
@@ -14,7 +14,7 @@ const StartupBanner = () => {
 
           <div className="flex items-center justify-between mt-16 ">
             <h2 className="text-white font-bold capitalize lg:text-[48px] text-[22px]">
-              Choose your startup
+              {title}
             </h2>
             <div className="flex gap-2 items-center bg-white rounded-md px-3 py-2 cursor-pointer">
               <h5 className="text-sm font-semibold">Options</h5>
@@ -27,4 +27,4 @@ const StartupBanner = () => {
   );
 };
 
-export default StartupBanner;
+export default PageBanner;
