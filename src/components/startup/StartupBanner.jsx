@@ -12,14 +12,10 @@ const PageBanner = ({ title }) => {
             <ProtectedSearchInput />
           </div>
 
-          <div className="flex items-center justify-between mt-16 ">
-            <h2 className="text-white font-bold capitalize lg:text-[48px] text-[22px]">
+          <div className="flex items-center justify-center mt-16 ">
+            <h2 className="text-white font-bold capitalize lg:text-[62px] text-[22px]">
               {title}
             </h2>
-            <div className="flex gap-2 items-center bg-white rounded-md px-3 py-2 cursor-pointer">
-              <h5 className="text-sm font-semibold">Options</h5>
-              <IoMdOptions />
-            </div>
           </div>
         </div>
       </div>
