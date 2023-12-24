@@ -5,7 +5,7 @@ import Link from "next/link";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 import MobileNavbar from "./MobileNavbar";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { FaUser } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
@@ -47,6 +47,25 @@ const ProtectedNavbar = () => {
   const [navbarShow, setNavbarShow] = useState(false);
   const pathName = usePathname();
 
+  const [showModal, setShowModal] = useState(false);
+  //when i am click the behind the window is show modal state is false
+
+  const modalRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setShowModal(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="bg-secondary py-3 lg:py-[24px] ">
       <div className="container relative">
@@ -77,15 +96,63 @@ const ProtectedNavbar = () => {
           </nav>
 
           <div className="hidden lg:block">
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <Link href="/users/dashboard">
                 <FaUser color="#fff" size={22} className="cursor-pointer" />
               </Link>
               <div>
                 <MdLogout color="#fff" size={22} className="cursor-pointer" />
               </div>
+            </div> */}
+
+            <div className="flex items-center gap-3 relative">
+              <div
+                className="w-[50px] h-[50px] rounded-full relative cursor-pointer"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setShowModal(!showModal);
+                }}
+              >
+                <Image
+                  src={"/1.jpg"}
+                  alt="profile image"
+                  fill
+                  className="rounded-full"
+                />
+              </div>
+              <div>
+                <h2 className="text-[16px] font-semibold text-white">
+                  Johan Smith
+                </h2>
+                <p className="text-sm text-[#b6b4b4] font-normal">
+                  Startup User
+                </p>
+              </div>
+
+              {/* profile modal show */}
+              {showModal && (
+                <>
+                  <div ref={modalRef}>
+                    <ul className="px-4 py-3 bg-white rounded-sm w-[180px] absolute top-full left-0 z-50">
+                      <li
+                        onClick={() => setShowModal(false)}
+                        className="text-base font-medium text-main hover:text-text pb-1"
+                      >
+                        <Link href="/users/dashboard">Dashboard</Link>
+                      </li>
+                      <li
+                        className="cursor-pointer text-base font-medium text-main pb-1 hover:text-text"
+                        onClick={() => setShowModal(false)}
+                      >
+                        Logout
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              )}
             </div>
           </div>
+
           {/* responsive design bar here */}
           <div
             className="block lg:hidden cursor-pointer duration-300"
