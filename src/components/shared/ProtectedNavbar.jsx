@@ -96,16 +96,7 @@ const ProtectedNavbar = () => {
           </nav>
 
           <div className="hidden lg:block">
-            {/* <div className="flex gap-6">
-              <Link href="/users/dashboard">
-                <FaUser color="#fff" size={22} className="cursor-pointer" />
-              </Link>
-              <div>
-                <MdLogout color="#fff" size={22} className="cursor-pointer" />
-              </div>
-            </div> */}
-
-            <div className="flex items-center gap-3 relative">
+            <div className="flex items-center gap-3 relative pb-2">
               <div
                 className="w-[50px] h-[50px] rounded-full relative cursor-pointer"
                 onClick={(event) => {
