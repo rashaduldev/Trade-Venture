@@ -78,7 +78,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 360px;
   position: relative;
   z-index: 10;
 }
@@ -110,6 +110,33 @@ body {
   background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
+}
+
+/* co founder profile banner*/
+.coFounder-banner {
+  background-image: url("https://i.ibb.co/pyXvdKM/maple-1079235-1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.icons span {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.icons span:hover {
+  background-color: #a7bbee;
 }
 
 /* custom scrollbar hidden in  dashboard page  */
