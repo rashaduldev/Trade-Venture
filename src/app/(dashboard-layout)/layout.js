@@ -1,4 +1,5 @@
 import DashboardSidebar from "@/components/shared/DashboardSidebar";
+import DashboardTopNavbar from "@/components/shared/DashboardTopNavbar";
 
 export const metadata = {
   title: "Trade Venture",
@@ -10,7 +11,13 @@ export default function DashboardLayout({ children }) {
     <>
       <div className="flex gap-5">
         <DashboardSidebar />
-        <div className="lg:ml-[350px]"> {children}</div>
+        <div className="lg:ml-[340px] w-full bg-[#f4f4f4]">
+          <>
+          <DashboardTopNavbar/>
+           {children}
+          </>
+          
+           </div>
       </div>
     </>
   );
