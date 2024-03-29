@@ -48,7 +48,7 @@ const DashboardSidebar = () => {
     {
       id: 6,
       text: "Message",
-      link: "/message",
+      link: "/users/message",
       icon: <AiOutlineMessage />,
     },
     {

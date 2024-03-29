@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 const ProtectedSearchInput = () => {
   return (
-    <div className="lg:w-[700px] md:w-[500px] w-full bg-white  rounded-lg h-[45px] flex items-center">
+    <div className="lg:w-full md:w-[500px] w-full bg-white  rounded-lg h-[45px] flex items-center">
       <div className="hidden md:block">
         <select
           className="w-[150px] bg-gray-200 h-[45px] outline-none px-2 rounded-md font-semibold text-sm pl-5"

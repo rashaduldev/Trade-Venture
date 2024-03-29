@@ -4,6 +4,7 @@ import about2 from "../../../assets/about/about-2.png";
 import Image from "next/image";
 
 const AboutTradeVenture = () => {
+  console.log('ok');
   return (
     // <div className="container lg:mt-[45px]">
     //   <div className="grid grid-cols-10 gap-5">
