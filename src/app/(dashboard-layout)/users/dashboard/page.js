@@ -1,6 +1,4 @@
 "use client";
-import ComingSoon from "@/components/shared/ComingSoon";
-import { BsHandbag } from "react-icons/bs";
 import { FaArrowDown, FaInfo,FaPlus } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa";
 import { IoBagRemove } from "react-icons/io5";
@@ -8,6 +6,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import { MdOutlineLink } from "react-icons/md";
 import { GiSelfLove } from "react-icons/gi";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import Image from "next/image";
 
 const DashboardPage = () => {
   const data = [
@@ -52,7 +51,7 @@ const DashboardPage = () => {
         <span className="">Total Pitch</span>
         <span className="p-1 bg-[#33383F] text-white text-[8px] rounded-full"><FaInfo /></span>
       </p>
-      <img className="pl-24" src="https://i.ibb.co/S3rn049/Vector-647.png" />
+      <Image className="pl-24" src="https://i.ibb.co/S3rn049/Vector-647.png" alt="Description" width={200} height={300} />
         </div>
       <p className="text-6xl font-bold my-2">03</p>
         </div>
@@ -80,7 +79,7 @@ const DashboardPage = () => {
         <span className="">Total investor</span>
         <span className="p-1 bg-[#33383F] text-white text-[8px] rounded-full"><FaInfo /></span>
       </p>
-      <img className="pl-24" src="https://i.ibb.co/jRfrFY5/Vector-647-1.png" />
+      <Image className="pl-24" src="https://i.ibb.co/jRfrFY5/Vector-647-1.png" alt="Description" width={200} height={300} />
         </div>
       <p className="text-6xl font-bold my-2">512</p>
       <div className="flex items-center text-[20px] gap-1 bg-white p-[2px] rounded-md">
@@ -94,7 +93,8 @@ const DashboardPage = () => {
           </div>
           <div className="bg-[#F0ECFD] p-7 rounded-lg">
           <div className="w-16 h-16 items-center flex p-4 text-white bg-[#1A1D1F] rounded-full">
-                  <img className="mx-auto text-5xl" src="https://i.ibb.co/nkS8qr3/Vector-605-Stroke.png" />
+                  {/* <img  src="" /> */}
+                  <Image className="mx-auto text-5xl" src="https://i.ibb.co/nkS8qr3/Vector-605-Stroke.png" alt="Description" width={200} height={300} />
                   </div>
 
     <div>
@@ -103,7 +103,8 @@ const DashboardPage = () => {
         <span className="">Total investment</span>
         <span className="p-1 bg-[#33383F] text-white text-[8px] rounded-full"><FaInfo /></span>
       </p>
-      <img className="pl-10" src="https://i.ibb.co/G3C6MyK/Vector-647-2.png" />
+      <Image className="pl-10" src="https://i.ibb.co/G3C6MyK/Vector-647-2.png" alt="Description" width={150} height={300} />
+      {/* <img  src="" /> */}
         </div>
       <p className="text-6xl font-bold my-2">$64k</p>
       <div className="flex items-center text-[20px] gap-1 bg-white p-[2px] rounded-md">
@@ -175,21 +176,21 @@ const DashboardPage = () => {
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
@@ -211,21 +212,21 @@ const DashboardPage = () => {
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
@@ -247,21 +248,21 @@ const DashboardPage = () => {
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
                       <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
@@ -289,7 +290,7 @@ const DashboardPage = () => {
                  <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8 h-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/5kFTDtq/download.png" />
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
                           </span>
                         </div>
                       </div>
@@ -319,7 +320,8 @@ const DashboardPage = () => {
                  <div className="avatar placeholder">
                         <div className="bg-neutral text-neutral-content rounded-full w-8 h-8">
                           <span className="text-xs">
-                          <img src="https://i.ibb.co/WctPKwY/download.png" />
+                          <Image src="https://i.ibb.co/WctPKwY/download.png" alt="" width={150} height={300} />
+                          {/* <img src="" /> */}
                           </span>
                         </div>
                       </div>
@@ -355,7 +357,7 @@ const DashboardPage = () => {
                 <div>
                      <div className="avatar">
                     <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                       <Image src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" width={150} height={300} />
                     </div>
                     </div>
                     <p className="text-lg">Gladyce</p>
@@ -363,7 +365,7 @@ const DashboardPage = () => {
                 <div>
                      <div className="avatar">
                     <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <Image src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" width={150} height={300} />
                     </div>
                     </div>
                     <p className="text-lg">Gladyce</p>
@@ -371,7 +373,7 @@ const DashboardPage = () => {
                 <div>
                      <div className="avatar">
                     <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <Image src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" width={150} height={300} />
                     </div>
                     </div>
                     <p className="text-lg">Gladyce</p>
@@ -379,7 +381,7 @@ const DashboardPage = () => {
                 <div>
                      <div className="avatar">
                     <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <Image src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="" width={150} height={300} />
                     </div>
                     </div>
                     <p className="text-lg">Gladyce</p>
