@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaRegSquare } from "react-icons/fa";
 import { FaCircleInfo } from 'react-icons/fa6';
@@ -52,9 +53,11 @@ const editprofile = () => {
                         </div>
                     </div>
                     <div className='flex flex-col lg:flex-row items-center gap-8 m-10'>
-                      <p>    <img
+                      <p>    <Image
                 src="https://i.ibb.co/HP28p9X/Cover-photo.png"
                 alt="Profile Image"
+                width={150}
+                height={300}
                 className="rounded-full h-32 w-32 lg:h-20 lg:w-20"
                 />  </p>
                       <div className=''>
@@ -217,9 +220,11 @@ const editprofile = () => {
                   </div>
                     <div>
                       <p className='bg-[#F9E3FB] text-center  rounded-lg cursor-pointer p-16 my-8'>Show the Uploaded <br/> Cover photo  here</p>
-                      <img
+                      <Image
                 src="https://i.ibb.co/HP28p9X/Cover-photo.png"
                 alt="Profile Image"
+                width={150}
+                height={300}
                 className="rounded-full h-20 w-20"
                 />
                 <p className='mt-5 font-bold'>Display name here</p>
