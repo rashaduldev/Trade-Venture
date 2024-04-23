@@ -5,7 +5,7 @@ import { FaRegSquare } from "react-icons/fa";
 import { FaCircleInfo } from 'react-icons/fa6';
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
 
-const editprofile = () => {
+const EditProfile = () => {
   const [isBold, setIsBold] = useState(false);
   const [isItalic, setIsItalic] = useState(false);
   const [isUnderline, setIsUnderline] = useState(false);
@@ -236,4 +236,4 @@ const editprofile = () => {
   );
 };
 
-export default editprofile;
+export default EditProfile;
