@@ -24,7 +24,7 @@ const DashboardSidebar = () => {
     {
       id: 2,
       text: "Profile",
-      link: "/users/profile",
+      link: "/users/userprofile",
       icon: <FaUser />,
     },
     {
