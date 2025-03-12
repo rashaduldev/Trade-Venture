@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const PitchPage = () => {
@@ -54,7 +55,7 @@ const PitchPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:p-14">
             {data.map((sdata) => (
               <div key={sdata.id} className="card bg-base-100 hover:border-[#032D2C] border border-gray-300 cursor-pointer">
-                <figure className="pt-5"><img src={sdata.image} alt={sdata.title} /></figure>
+                <figure className="pt-5"><Image width={50} height={50} src={sdata.image} alt={sdata.title} /></figure>
                 <div className="card-body">
                   <h2 className="card-title mx-auto">{sdata.title}</h2>
                 </div>

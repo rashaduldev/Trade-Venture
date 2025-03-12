@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
@@ -33,7 +34,9 @@ const userProfile = () => {
     
     return (
         <div className='relative'>
-            <div className=''>   <img
+            <div className=''>   <Image
+             width={20}
+             height={20}
             src="https://i.ibb.co/HP28p9X/Cover-photo.png"
             alt="Profile Image"
             className="w-full "
@@ -45,7 +48,9 @@ const userProfile = () => {
             <div className='flex justify-between '>
                     <div className='flex gap-5'>
                         <div>
-                        <img
+                        <Image
+                         width={40}
+                         height={40}
                 src="https://i.ibb.co/HP28p9X/Cover-photo.png"
                 alt="Profile Image"
                 className="rounded-full h-10 w-10"

@@ -35,7 +35,7 @@ const ContactDetails = () => {
               <div className="flex gap-[25px] items-center">
                 <PiPhoneCallBold color="#fff" size={30} />
                 <span className="text-base font-400 text-white ">
-                  +880 1727887729
+                  +880 1717164444
                 </span>
               </div>
               <div className="flex gap-[25px] items-center">

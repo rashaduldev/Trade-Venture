@@ -93,7 +93,6 @@ const DashboardPage = () => {
           </div>
           <div className="bg-[#F0ECFD] p-7 rounded-lg">
           <div className="w-16 h-16 items-center flex p-4 text-white bg-[#1A1D1F] rounded-full">
-                  {/* <img  src="" /> */}
                   <Image className="mx-auto text-5xl" src="https://i.ibb.co/nkS8qr3/Vector-605-Stroke.png" alt="Description" width={200} height={300} />
                   </div>
 
@@ -104,7 +103,6 @@ const DashboardPage = () => {
         <span className="p-1 bg-[#33383F] text-white text-[8px] rounded-full"><FaInfo /></span>
       </p>
       <Image className="pl-10" src="https://i.ibb.co/G3C6MyK/Vector-647-2.png" alt="Description" width={150} height={300} />
-      {/* <img  src="" /> */}
         </div>
       <p className="text-6xl font-bold my-2">$64k</p>
       <div className="flex items-center text-[20px] gap-1 bg-white p-[2px] rounded-md">
@@ -321,7 +319,6 @@ const DashboardPage = () => {
                         <div className="bg-neutral text-neutral-content rounded-full w-8 h-8">
                           <span className="text-xs">
                           <Image src="https://i.ibb.co/WctPKwY/download.png" alt="" width={150} height={300} />
-                          {/* <img src="" /> */}
                           </span>
                         </div>
                       </div>

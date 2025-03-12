@@ -4,6 +4,7 @@ import { BiMessageDetail } from "react-icons/bi";
 import { LuBell } from "react-icons/lu";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const DashboardTopNavbar = () => {
   const [isOptionsVisible, setOptionsVisible] = useState();
@@ -92,7 +93,9 @@ const DashboardTopNavbar = () => {
         className="cursor-pointer flex items-center gap-2"
         onClick={toggleOptions}
       >
-        <img
+        <Image
+         width={20}
+         height={20}
           src="https://i.ibb.co/HP28p9X/Cover-photo.png"
           alt="Profile Image"
           className="rounded-full h-10 w-10"
@@ -114,7 +117,9 @@ const DashboardTopNavbar = () => {
         key={message.id}
         className="flex items-center gap-2 m-3 p-2 hover:bg-gray-100 rounded-lg"
       >
-        <img
+        <Image
+         width={20}
+         height={20}
           src={message.img}
           alt="Profile Image"
           className="rounded-full h-10 w-10"

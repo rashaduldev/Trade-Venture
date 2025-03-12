@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -106,7 +107,9 @@ const MessagePage = () => {
               <p>Investors</p>
               </div>
               <div className="flex items-center gap-3">
-              <img
+              <Image
+              width={20}
+              height={20}
                       src="https://i.ibb.co/frvS9tK/Union-Stroke.png"
                       alt="Profile Image"
                       className="rounded-full h-5 w-5"
@@ -122,7 +125,9 @@ const MessagePage = () => {
                 onClick={() => handleSelectMessage(message)}
                 className="flex items-center gap-2 m-3 p-3 rounded-lg w-full cursor-pointer hover:bg-gray-100"
               >
-                <img
+                <Image
+                 width={20}
+                 height={20}
                   src={message.img}
                   alt="Profile Image"
                   className="rounded-full h-10 w-10"
@@ -193,7 +198,9 @@ const MessagePage = () => {
               <div>
                 {messageData.map((messaged) => (
                   <div key={messaged.id} className="mx-5 mt-3 flex gap-5">
-                    <img
+                    <Image
+                     width={20}
+                     height={20}
                       src={messaged.img}
                       alt="Profile Image"
                       className="rounded-full h-10 w-10"

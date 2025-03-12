@@ -1,4 +1,5 @@
 import EventProfileBanner from "@/components/startupProfilePage/EventProfileBanner";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -25,9 +26,9 @@ const EventDetailsPage = () => {
       <div className='lg:px-36 px-5 py-20'>
         <p className='text-2xl text-center lg:text-left lg:text-4xl text-green-600 font-bold'>Our Grate Speaker</p>
         <div className='mt-10 flex flex-col lg:flex-row gap-5'>
-        <img className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
-        <img className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
-        <img className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
+        <Image  width={20} height={20} className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
+        <Image  width={20} height={20} className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
+        <Image  width={20} height={20} className="" src="https://i.ibb.co/6sz6qQf/image-42.png" alt="" />
         </div>
       </div>
     </div>

@@ -32,7 +32,9 @@ const Banner = () => {
 
           <div className="lg:col-span-3 ">
             <div className="flex justify-center">
-              <img
+              <Image
+               width={20}
+               height={20}
                 src="https://i.ibb.co/ww1BvhT/banner.png"
                 alt=""
                 className="w-[400px]  h-[320px] xl:w-[578px] xl:h-[396px] lg:w-[448px] lg:h-[350px] object-cover"

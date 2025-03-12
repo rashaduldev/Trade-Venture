@@ -8,7 +8,10 @@ const EventCard = ({ item }) => {
    <Link href={`/events/${item?.id}`}>
     <div className="bg-green-100 cursor-pointer rounded-sm">
       <div className="card image-full bg-green-100 py-5 px-4 rounded-md duration-300 hover:shadow-none h-[355px]">
-  <figure><img src={image} alt="" /></figure>
+  <figure><Image 
+   width={20}
+   height={20}
+  src={image} alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
     <p>{small_paragraph}</p>

@@ -20,7 +20,9 @@ const StartupCard = ({ item }) => {
     <Link href={`/startup/${id}`}>
       <div className="w-full max-w-[400px]overflow-hidden bg-white rounded-xl  ">
         <div className="relative">
-          <img
+          <Image
+           width={20}
+           height={20}
             className="object-cover w-full h-56 rounded-tl-xl rounded-tr-xl   "
             src={image}
             alt="avatar"

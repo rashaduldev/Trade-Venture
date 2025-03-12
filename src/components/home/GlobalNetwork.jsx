@@ -24,7 +24,10 @@ const GlobalNetwork = () => {
           </div>
           <div className="w-full lg:w-1/2 md:w-[500px]">
             <div className="relative w-full h-full">
-              <img src="https://i.ibb.co/D71dRcT/meeting.png" alt="" />
+              <Image
+               width={20}
+               height={20}
+              src="https://i.ibb.co/D71dRcT/meeting.png" alt="" />
               <div
                 className="absolute "
                 style={{
