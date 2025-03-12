@@ -69,12 +69,12 @@ const DashboardTopNavbar = () => {
   ]
   
   return (
-    <div className="py-[20px] shadow-sm pl-4 pr-10 bg-white ">
+    <div className="mt-20 md:mt-0 py-[20px] shadow-sm px-4 md:px-8 bg-white">
       <div className="flex items-center justify-between ">
        <Link href={'/'}>
        <div className="flex items-center gap-[12px]">
             <FaArrowLeftLong size={18}/>
-            <h2 className="text-[20px] font-semibold text-main cursor-pointer">Back to landing page</h2>
+            <h2 className="text-[20px] font-semibold text-main cursor-pointer hidden md:block">Back to landing page</h2>
         </div>
        </Link>
         {/* profile section  */}
@@ -100,7 +100,7 @@ const DashboardTopNavbar = () => {
           alt="Profile Image"
           className="rounded-full h-10 w-10"
         />
-        <div>
+        <div className="hidden block">
           <p className="font-bold">Johan Smith</p>
           <p>Investor</p>
         </div>

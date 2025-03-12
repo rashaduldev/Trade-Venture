@@ -22,9 +22,9 @@ const DashboardPage = () => {
   return (
     <>
          <div className="w-full">
-        <h1 className="text-5xl font-bold m-4">Dashboard</h1>
+        <h1 className="text-3xl md:text-5xl font-bold m-4">Dashboard</h1>
       <div className="bg-white m-[20px] py-[20px] rounded-md">
-      <div className="flex items-center justify-between px-[40px] py-[20px]">
+      <div className="flex items-center justify-between px-4 md:px-[40px] py-[20px]">
            <div className="flex items-center gap-[10px]">
              <p className="w-[15px] h-[35px] rounded bg-[#CABDFF]"></p>
              <p className="text-2xl font-bold">Overview</p>
@@ -160,9 +160,45 @@ const DashboardPage = () => {
               </div>
               </div>
               <div className="px-[10px] lg:px-[40px]">
-              <p className="lg:text-[19px] mt-10 pl-3 text-[#6F767E]">Need some ideas for the next product?</p>
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="flex flex-col lg:flex-row items-center gap-6">
+              <p className="lg:text-[19px] my-10 pl-3 text-[#6F767E]">Need some ideas for the next product?</p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-8">
+                <div className="flex flex-col lg:flex-row items-start md:gap-6">
+                  <div style={{ border:'1px solid #EFEFEF' }} className="text-2xl p-5 rounded-full">
+                  <IoBagRemove />
+                  </div>
+                  <div>
+                    <p className="text-xl font-bold mb-2">Pitch Idea 01</p>
+                    <div className="flex items-center">
+                      <button className="btn">new</button>
+                      <div className="mx-2">
+                      <div className="avatar placeholder">
+                        <div className="bg-neutral text-neutral-content rounded-full w-8">
+                          <span className="text-xs">
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="avatar placeholder">
+                        <div className="bg-neutral text-neutral-content rounded-full w-8">
+                          <span className="text-xs">
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="avatar placeholder">
+                        <div className="bg-neutral text-neutral-content rounded-full w-8">
+                          <span className="text-xs">
+                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
+                          </span>
+                        </div>
+                      </div>
+                      </div>
+                      <p>21+ investor</p>
+
+                    </div>
+                  </div>
+                </div>  
+                <div className="flex flex-col lg:flex-row items-start md:gap-6">
                   <div style={{ border:'1px solid #EFEFEF' }} className="text-2xl p-5 rounded-full">
                   <IoBagRemove />
                   </div>
@@ -198,12 +234,12 @@ const DashboardPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center gap-6 my-10">
+                <div className="flex flex-col lg:flex-row items-start md:gap-6">
                   <div style={{ border:'1px solid #EFEFEF' }} className="text-2xl p-5 rounded-full">
                   <IoBagRemove />
                   </div>
                   <div>
-                    <p className="text-xl font-bold mb-2">Pitch Idea 02</p>
+                    <p className="text-xl font-bold mb-2">Pitch Idea 01</p>
                     <div className="flex items-center">
                       <button className="btn">new</button>
                       <div className="mx-2">
@@ -233,44 +269,7 @@ const DashboardPage = () => {
 
                     </div>
                   </div>
-                </div>
-                <div className="flex flex-col lg:flex-row items-center gap-6 my-10">
-                  <div style={{ border:'1px solid #EFEFEF' }} className="text-2xl p-5 rounded-full">
-                  <IoBagRemove />
-                  </div>
-                  <div>
-                    <p className="text-xl font-bold mb-2">Pitch Idea 03</p>
-                    <div className="flex items-center">
-                      <button className="btn">new</button>
-                      <div className="mx-2">
-                      <div className="avatar placeholder">
-                        <div className="bg-neutral text-neutral-content rounded-full w-8">
-                          <span className="text-xs">
-                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
-                          </span>
-                        </div>
-                      </div>
-                      <div className="avatar placeholder">
-                        <div className="bg-neutral text-neutral-content rounded-full w-8">
-                          <span className="text-xs">
-                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
-                          </span>
-                        </div>
-                      </div>
-                      <div className="avatar placeholder">
-                        <div className="bg-neutral text-neutral-content rounded-full w-8">
-                          <span className="text-xs">
-                          <Image src="https://i.ibb.co/5kFTDtq/download.png" alt="" width={150} height={300} />
-                          </span>
-                        </div>
-                      </div>
-                      </div>
-                      <p>21+ investor</p>
-
-                    </div>
-                  </div>
-                </div>
-                
+                </div>              
               </div>
               </div>
            </div>
